@@ -3,9 +3,13 @@
 ====================================*/
 
 .footer {
-  padding: 5em 0 3em;
+  padding: 3em 0 1em;
   background: #f6f6f6;
   text-align: center;
+
+  .copyright {
+    font-size: 14px;
+  }
 
   p {
     small {
@@ -19,7 +23,7 @@
   }
 
   .icons {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     display: none;
 
     @include media($screen-tablet) {
@@ -28,7 +32,7 @@
 
     li {
       display: inline-block;
-      padding-right: 2.5em;
+      padding-right: .5em;
 
       &:last-child {
         padding-right: 0;
@@ -42,12 +46,12 @@
       @include border-radius(50%);
       text-align: center;
       display: inline-block;
-      width: 55px;
-      height: 55px;
-      line-height: 60px;
+      width: 32px;
+      height: 32px;
+      line-height: 30px;
 
       .fa {
-        font-size: 1.6em;
+        font-size: 1em;
       }
 
       &:hover,

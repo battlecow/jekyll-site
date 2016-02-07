@@ -1,5 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-assets-cache/
+source/.jekyll-assets-cache/
 bower_components
 node_modules
