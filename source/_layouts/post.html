@@ -4,7 +4,6 @@ disqus: false
 archive: false
 post_class: post-template
 slug: single
-comments: true
 ---
 
 <article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
@@ -15,9 +14,11 @@ comments: true
       <time datetime="2015-10-13">
         <i class="fa fa-calendar-o"></i> <time datetime="{{ page.date | date:"%Y-%m-%d" }}"> {{ page.date | date:"%Y-%m-%d" }}
       </time>
+      {% if site.comments and page.comments %}
       <span>
         <i class="fa fa-comments"></i> <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">Leave a comment</a>
       </span>
+      {% endif %}
       <span>
         {% assign post = page %}
         {% if post.categories.size > 0 %}
@@ -51,7 +52,7 @@ comments: true
   {{content}}
 
   <footer class="post-footer">
-    {% if site.author %}
+    {% if site.author and page.author %}
     <section class="author">
       <h4>{{ site.author.name }}</h4>
       <p>{{ site.author.bio }}</p>
