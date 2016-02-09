@@ -1,7 +1,7 @@
-//=require ../../bower/jquery/dist/jquery.min.js
-//=require ../../bower/classie/classie.js
-//=require ../../bower/simple-jekyll-search/dest/jekyll-search.js
-//=require ../../bower/swipebox/src/js/jquery.swipebox.min.js
+//=require ../../bower_components/jquery/dist/jquery.min.js
+//=require ../../bower_components/classie/classie.js
+//=require ../../bower_components/simple-jekyll-search/dest/jekyll-search.js
+//=require ../../bower_components/swipebox/src/js/jquery.swipebox.min.js
 
 //=require scripts/_modal.js
 //=require scripts/_simple-jekyll-search.js
