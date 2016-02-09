@@ -8,12 +8,14 @@
 
   <footer class="post-meta">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">
-      <i class="fa fa-calendar-o"></i> {{ page.date | date:"%Y-%m-%d" }}
+      <i class="fa fa-calendar-o"></i> {{ post.date | date:"%Y-%m-%d" }}
     </time>
 
+    {% if post.comments %}
     <span>
       <i class="fa fa-comments"></i> <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ post.id }}">Leave a comment</a>
     </span>
+    {% endif %}
 
     <span>
         {% if post.categories.size > 0 %}
