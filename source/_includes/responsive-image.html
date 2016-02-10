@@ -1,0 +1,7 @@
+{% capture srcset %}
+    {% for i in resized %}
+        /assets/images/{{ i.dirname }}/{{ i.basename }} {{ i.width }}w,
+    {% endfor %}
+{% endcapture %}
+
+<img src="/assets/images/{{ original.basename }}" srcset="{{ srcset | strip_newlines }} /assets/images/{{ original.basename }} {{ original.width }}w" style="max-width:400px">
