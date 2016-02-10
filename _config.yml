@@ -2,7 +2,7 @@ permalink   : /:title/
 markdown    : kramdown
 highlighter : pygments
 
-paginate: 2 #6
+paginate: 3 #6
 comments: true
 paginate_path: "/page/:num"
 
@@ -56,5 +56,17 @@ compress_html:
   profile: false
   ignore:
     envs: all
-
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+
+#gems: [jekyll-responsive_image]
+responsive_image:
+  template: source/_includes/responsive-image.html
+  default_quality: 90
+  sizes:
+    - width: 480  # [Required] How wide the resized image will be.
+      quality: 80 # [Optional] Overrides default_quality for this size.
+    - width: 800
+    - width: 1400
+      quality: 90
+  base_path: source/assets/images
+  output_path_format: source/assets/images/resized/%{width}/%{basename}
