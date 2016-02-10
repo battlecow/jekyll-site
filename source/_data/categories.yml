@@ -4,3 +4,12 @@
 
 - slug: me
   name: Me
+
+- slug: intro
+  name: Intro
+
+- slug: docker
+  name: Docker
+
+- slug: bamboo
+  name: Bamboo
