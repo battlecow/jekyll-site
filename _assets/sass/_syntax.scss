@@ -1,4 +1,17 @@
+code, pre {
+    font-family: Consolas,Monaco,'Andale Mono',monospace;
+    font-size: .85em;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    padding: .15625em .3125em;
+    color: #4e4e4e;
+    background-color: #f5f2f0;
+    text-shadow: 0 .08em #fff;
+}
+
 .highlight {
+  position: relative;
   @extend %clearfix;
   padding: 0;
   margin: {
@@ -7,7 +20,7 @@
   };
 
   &, .hll, pre {
-    background-color: #272822;
+    background-color: #f5f2f0;
     border: none;
   }
 
@@ -21,10 +34,6 @@
     word-break: inherit;
     word-wrap: inherit;
 
-    &, code {
-      color: #eeffdd;
-    }
-
     code {
       white-space: pre;
 
@@ -34,6 +43,12 @@
     }
   }
 
+  .language-bash:before {
+    content: 'Bash';
+    position: absolute;
+    top: em(5px);
+    left: em(10px);
+  }
 
   .c { color: #75715e } /* Comment */
   .err { color: #f2f1f2 } /* Error */

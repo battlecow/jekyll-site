@@ -146,10 +146,8 @@ body:not(.single) {
   }
 
   .share {
-    position: absolute;
-    width: em(140px);
-    top: em(60px);
-    right: 0;
+    position: relative;
+    padding: 0px 0px em(20px) 0px;
     text-align: center;
 
     a {
