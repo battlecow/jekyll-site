@@ -22,8 +22,8 @@ title: Brian Kelley | DevOps Engineer
 description: "DevOps Engineer, Docker enthusiast, programming dabbler"
 meta_description: ""
 meta_keywords: "site, website, docker, artifactory, bamboo, atlassian, stash, bitbucket, jira"
-url: https://blog.brianmkelley.com
-production_url: https://blog.brianmkelley.com
+url: http://blog.brianmkelley.com
+production_url: http://blog.brianmkelley.com
 repo: https://github.com/battlecow/battlecow.github.io
 disqus_shortname: "briankelley"
 rss_path: source/
