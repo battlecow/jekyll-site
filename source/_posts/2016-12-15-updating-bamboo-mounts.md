@@ -5,7 +5,7 @@ permalink: updating-bamboo-mounts
 date: 2016-12-15 12:50:02
 comments: true
 description: "Updating Bamboo Mounts"
-keywords: "Bamboo, Docker""
+keywords: "Bamboo, Docker"
 categories: Docker
 
 tags: Docker, Bamboo, Build
