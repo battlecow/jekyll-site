@@ -5,4 +5,4 @@ _site
 source/.jekyll-assets-cache/
 bower_components
 node_modules
-source/assets/
+source/assets/images/resized/
